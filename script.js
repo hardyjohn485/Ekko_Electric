@@ -94,29 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- CONTACT FORM SUBMISSION MOCK --- */
-    const contactForm = document.getElementById('cyberForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.textContent;
-            
-            btn.textContent = 'TRANSMITTING...';
-            btn.style.opacity = '0.7';
-            
-            // Simulate network request
-            setTimeout(() => {
-                btn.textContent = 'DATA SENT SUCCESSFULLY';
-                btn.style.background = 'linear-gradient(135deg, #00FFCC, #00AEEF)';
-                contactForm.reset();
-                
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.style.background = ''; // reset to class styling
-                    btn.style.opacity = '1';
-                }, 3000);
-            }, 1500);
-        });
-    }
 });
