@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | ekko ELECTRIC</title>
+    <title>ekko electric</title>
     <meta name="description" content="Explore the diverse range of electrical panel board projects we've completed.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +26,21 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--space-4);
             margin-top: var(--space-6);
+        }
+
+        @media screen and (max-width: 1100px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .project-tag {
@@ -212,13 +224,18 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Main Switch Board (MSB) Panel</li>
-                                <li><strong>Main Incomer:</strong> Manual Changeover Switch with high-capacity HRC Fuse Carriers</li>
-                                <li><strong>Outgoing Circuits:</strong> TPN SFUs, RCBOs, and modular MCB distribution</li>
-                                <li><strong>Monitoring & Control:</strong> Analog Voltmeter/Ammeter systems with LED status indicators</li>
+                                <li><strong>Main Incomer:</strong> Manual Changeover Switch with high-capacity HRC Fuse
+                                    Carriers</li>
+                                <li><strong>Outgoing Circuits:</strong> TPN SFUs, RCBOs, and modular MCB distribution
+                                </li>
+                                <li><strong>Monitoring & Control:</strong> Analog Voltmeter/Ammeter systems with LED
+                                    status indicators</li>
                                 <li><strong>Construction:</strong> Heavy-duty floor-mounted modular enclosure</li>
-                                <li><strong>Busbars:</strong> High-conductivity Aluminum/Copper busbar system with safety grading</li>
+                                <li><strong>Busbars:</strong> High-conductivity Aluminum/Copper busbar system with
+                                    safety grading</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A robust energy distribution solution engineered for high-performance industrial fuel station operations.</div>
+                            <div class="project-summary" style="text-align: center;">A robust energy distribution
+                                solution engineered for high-performance industrial fuel station operations.</div>
                         </div>
                     </article>
 
@@ -252,31 +269,45 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Main Switch Board (MSB) Solution</li>
-                                <li><strong>Main Incomer:</strong> Heavy-duty Manual Changeover Switch with HRC protection</li>
-                                <li><strong>Outgoing Circuits:</strong> Specialized TPN SFUs, RCBOs, and multi-point MCB distribution</li>
-                                <li><strong>Monitoring & Control:</strong> 3-Phase Analog metering system with professional RYB LED indicators</li>
-                                <li><strong>Construction:</strong> Precision-engineered floor-mounted panel structure</li>
-                                <li><strong>Busbars:</strong> High-grade Electrolytic Aluminum/Copper busbar configuration</li>
+                                <li><strong>Main Incomer:</strong> Heavy-duty Manual Changeover Switch with HRC
+                                    protection</li>
+                                <li><strong>Outgoing Circuits:</strong> Specialized TPN SFUs, RCBOs, and multi-point MCB
+                                    distribution</li>
+                                <li><strong>Monitoring & Control:</strong> 3-Phase Analog metering system with
+                                    professional RYB LED indicators</li>
+                                <li><strong>Construction:</strong> Precision-engineered floor-mounted panel structure
+                                </li>
+                                <li><strong>Busbars:</strong> High-grade Electrolytic Aluminum/Copper busbar
+                                    configuration</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">Professionally fabricated to deliver reliable power distribution for critical petroleum infrastructure.</div>
+                            <div class="project-summary" style="text-align: center;">Professionally fabricated to
+                                deliver reliable power distribution for critical petroleum infrastructure.</div>
                         </div>
                     </article>
 
 
                     <!-- Project 3 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
-                            <img src="assets/logo_nayara.png" alt="Nayara Energy Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">NAYARA MSB Panel Project</h3>
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                            <img src="assets/logo_nayara.png" alt="Nayara Energy Logo"
+                                style="height: 56px; object-fit: contain;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                NAYARA MSB Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/nayara_msb.png" alt="NAYARA MSB Panel Project Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/nayara_msb.png" alt="NAYARA MSB Panel Project Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">NAYARA ENERGY</span>
                                 <span class="project-tag">COMPACT MSB</span>
@@ -284,30 +315,42 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Compact Main Switch Board</li>
-                                <li><strong>Main Incomer:</strong> 4P Manual Changeover Switch with upstream MCCB protection</li>
-                                <li><strong>Outgoing Circuits:</strong> Advanced RCCBs and multi-pole MCB distribution network</li>
-                                <li><strong>Monitoring & Control:</strong> Analog V/A Metering with RYB phase indicators and control buttons</li>
+                                <li><strong>Main Incomer:</strong> 4P Manual Changeover Switch with upstream MCCB
+                                    protection</li>
+                                <li><strong>Outgoing Circuits:</strong> Advanced RCCBs and multi-pole MCB distribution
+                                    network</li>
+                                <li><strong>Monitoring & Control:</strong> Analog V/A Metering with RYB phase indicators
+                                    and control buttons</li>
                                 <li><strong>Construction:</strong> Space-saving wall-mounted industrial enclosure</li>
                                 <li><strong>Busbars:</strong> High-efficiency Copper busbar system</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A specialized compact power control unit designed for efficient energy management in NAYARA's retail outlets.</div>
+                            <div class="project-summary" style="text-align: center;">A specialized compact power control
+                                unit designed for efficient energy management in NAYARA's retail outlets.</div>
                         </div>
                     </article>
 
                     <!-- Project 4 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
-                            <img src="assets/kottayam.png" alt="Kottayam Medical College Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">Kottayam Medical College MSB</h3>
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                            <img src="assets/kottayam.png" alt="Kottayam Medical College Logo"
+                                style="height: 56px; object-fit: contain;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                Kottayam Medical College MSB</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/kottayam_msb.png" alt="Kottayam Medical College MSB Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/kottayam_msb.png" alt="Kottayam Medical College MSB Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">MEDICAL COLLEGE</span>
                                 <span class="project-tag">MULTI-OUTGOING MSB</span>
@@ -316,29 +359,41 @@
                             <ul>
                                 <li><strong>Project Type:</strong> Heavy-duty Main Switch Board</li>
                                 <li><strong>Main Incomer:</strong> Professional 4P Manual Changeover Switch (COS)</li>
-                                <li><strong>Outgoing Circuits:</strong> Multiple 4P MCCBs with ROM and high-clearance spreader terminals</li>
-                                <li><strong>Monitoring & Control:</strong> Multi-set LED RYB indication with centralized SP control MCBs</li>
+                                <li><strong>Outgoing Circuits:</strong> Multiple 4P MCCBs with ROM and high-clearance
+                                    spreader terminals</li>
+                                <li><strong>Monitoring & Control:</strong> Multi-set LED RYB indication with centralized
+                                    SP control MCBs</li>
                                 <li><strong>Construction:</strong> Industrial-grade floor-mounted cabinet design</li>
-                                <li><strong>Busbars:</strong> Premium Copper busbar system with high short-circuit tolerance</li>
+                                <li><strong>Busbars:</strong> Premium Copper busbar system with high short-circuit
+                                    tolerance</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A mission-critical power distribution hub built to deliver maximum reliability for advanced healthcare facilities.</div>
+                            <div class="project-summary" style="text-align: center;">A mission-critical power
+                                distribution hub built to deliver maximum reliability for advanced healthcare
+                                facilities.</div>
                         </div>
                     </article>
 
                     <!-- Project 5 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
                             <img src="assets/honda.png" alt="Honda Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">HONDA MSB Panel Project</h3>
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                HONDA MSB Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/honda_msb.png" alt="Honda MSB Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/honda_msb.png" alt="Honda MSB Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">HONDA SHOWROOM</span>
                                 <span class="project-tag">COMMERCIAL MSB</span>
@@ -346,30 +401,43 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Commercial Distribution Switch Board</li>
-                                <li><strong>Main Incomer:</strong> High-reliability TPN SFU Isolator with HRC Fuse protection</li>
-                                <li><strong>Outgoing Circuits:</strong> Multiple TPN SFU circuits with dedicated fuse carriers</li>
-                                <li><strong>Monitoring & Control:</strong> Digital LED VAF Multimeter with RYB phase indicators</li>
-                                <li><strong>Construction:</strong> Premium floor-mounted industrial enclosure with spare expansion slot</li>
-                                <li><strong>Busbars:</strong> High-conductivity Aluminum busbar system with safety isolation</li>
+                                <li><strong>Main Incomer:</strong> High-reliability TPN SFU Isolator with HRC Fuse
+                                    protection</li>
+                                <li><strong>Outgoing Circuits:</strong> Multiple TPN SFU circuits with dedicated fuse
+                                    carriers</li>
+                                <li><strong>Monitoring & Control:</strong> Digital LED VAF Multimeter with RYB phase
+                                    indicators</li>
+                                <li><strong>Construction:</strong> Premium floor-mounted industrial enclosure with spare
+                                    expansion slot</li>
+                                <li><strong>Busbars:</strong> High-conductivity Aluminum busbar system with safety
+                                    isolation</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">An efficient and expandable power management system designed for modern automotive showrooms.</div>
+                            <div class="project-summary" style="text-align: center;">An efficient and expandable power
+                                management system designed for modern automotive showrooms.</div>
                         </div>
                     </article>
 
                     <!-- Project 6 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
                             <img src="assets/genisys.jpg" alt="Genisys Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">GENISYS MSB Panel Project</h3>
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                GENISYS MSB Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/genisys_panel.jpg" alt="Genisys MSB Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/genisys_panel.jpg" alt="Genisys MSB Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">GENISYS PROJECT</span>
                                 <span class="project-tag">INDUSTRIAL MSB</span>
@@ -377,30 +445,43 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> High-performance Main Switch Board</li>
-                                <li><strong>Main Incomer:</strong> TPN SFU Isolator system with integrated HRC Fuse Carriers</li>
-                                <li><strong>Outgoing Circuits:</strong> Precision TPN SFU outgoing feeders with safety locking</li>
-                                <li><strong>Monitoring & Control:</strong> Advanced Digital VAF metering with professional LED indicators</li>
+                                <li><strong>Main Incomer:</strong> TPN SFU Isolator system with integrated HRC Fuse
+                                    Carriers</li>
+                                <li><strong>Outgoing Circuits:</strong> Precision TPN SFU outgoing feeders with safety
+                                    locking</li>
+                                <li><strong>Monitoring & Control:</strong> Advanced Digital VAF metering with
+                                    professional LED indicators</li>
                                 <li><strong>Construction:</strong> Heavy-duty industrial floor-mounted framework</li>
-                                <li><strong>Busbars:</strong> High-grade Aluminum busbar configuration with safety insulation</li>
+                                <li><strong>Busbars:</strong> High-grade Aluminum busbar configuration with safety
+                                    insulation</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A reliable power control center engineered to support complex industrial and showroom operations.</div>
+                            <div class="project-summary" style="text-align: center;">A reliable power control center
+                                engineered to support complex industrial and showroom operations.</div>
                         </div>
                     </article>
 
                     <!-- Project 7 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
-                            <img src="assets/reliance_smart.png" alt="Reliance Smart Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">RELIANCE Distribution Panel Project</h3>
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                            <img src="assets/reliance_smart.png" alt="Reliance Smart Logo"
+                                style="height: 56px; object-fit: contain;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                RELIANCE Distribution Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/reliance_msb.png" alt="Reliance Distribution Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/reliance_msb.png" alt="Reliance Distribution Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">RELIANCE RETAIL</span>
                                 <span class="project-tag">METERING PANEL</span>
@@ -408,31 +489,46 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Retail Hub Distribution & Metering Panel</li>
-                                <li><strong>Main Incomer:</strong> Master TPN SFU system with high-rated Fuse protection</li>
-                                <li><strong>Metering:</strong> Dedicated provisions for 3-Phase and 1-Phase Energy Meters with suitable CTs</li>
-                                <li><strong>Outgoing Circuits:</strong> Robust bakelite fuse units with integrated HRC carriers</li>
-                                <li><strong>Monitoring & Control:</strong> Centralized LED VAF multimeter with RYB status indicators</li>
-                                <li><strong>Construction:</strong> Multi-compartment modular floor-mounted enclosure</li>
-                                <li><strong>Busbars:</strong> Industrial-grade Aluminum busbar layout for high current capacity</li>
+                                <li><strong>Main Incomer:</strong> Master TPN SFU system with high-rated Fuse protection
+                                </li>
+                                <li><strong>Metering:</strong> Dedicated provisions for 3-Phase and 1-Phase Energy
+                                    Meters with suitable CTs</li>
+                                <li><strong>Outgoing Circuits:</strong> Robust bakelite fuse units with integrated HRC
+                                    carriers</li>
+                                <li><strong>Monitoring & Control:</strong> Centralized LED VAF multimeter with RYB
+                                    status indicators</li>
+                                <li><strong>Construction:</strong> Multi-compartment modular floor-mounted enclosure
+                                </li>
+                                <li><strong>Busbars:</strong> Industrial-grade Aluminum busbar layout for high current
+                                    capacity</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A comprehensive metering and distribution network tailored for high-traffic retail environments.</div>
+                            <div class="project-summary" style="text-align: center;">A comprehensive metering and
+                                distribution network tailored for high-traffic retail environments.</div>
                         </div>
                     </article>
 
                     <!-- Project 8 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
-                            <img src="assets/stmarys.jpg" alt="St. Mary's Mission Hospital Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">St. Mary's Hospital AMF Panel Project</h3>
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                            <img src="assets/stmarys.jpg" alt="St. Mary's Mission Hospital Logo"
+                                style="height: 56px; object-fit: contain;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                St. Mary's Hospital AMF Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/stmarys_amf.png" alt="St. Mary's AMF Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/stmarys_amf.png" alt="St. Mary's AMF Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">HOSPITAL PROJECT</span>
                                 <span class="project-tag">AMF/ATS SYSTEM</span>
@@ -440,30 +536,44 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Automatic Mains Failure (AMF) with ATS</li>
-                                <li><strong>Main Incomers:</strong> Dual TPN SFU system for Utility (EB) and Backup (DG) power</li>
-                                <li><strong>Automatic Transfer Switch:</strong> Advanced Elmeasure ATS for seamless power transition</li>
-                                <li><strong>Outgoing Connections:</strong> High-performance regular 4P MCCB for main loads</li>
-                                <li><strong>Monitoring & Controls:</strong> Quad-set RYB indicators with centralized control MCBs</li>
+                                <li><strong>Main Incomers:</strong> Dual TPN SFU system for Utility (EB) and Backup (DG)
+                                    power</li>
+                                <li><strong>Automatic Transfer Switch:</strong> Advanced Elmeasure ATS for seamless
+                                    power transition</li>
+                                <li><strong>Outgoing Connections:</strong> High-performance regular 4P MCCB for main
+                                    loads</li>
+                                <li><strong>Monitoring & Controls:</strong> Quad-set RYB indicators with centralized
+                                    control MCBs</li>
                                 <li><strong>Construction:</strong> Professional wall-mounted modular structure</li>
                                 <li><strong>Busbars:</strong> High-conductivity Aluminum busbar network</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A reliable emergency power management solution designed to ensure uninterrupted electricity for critical healthcare services.</div>
+                            <div class="project-summary" style="text-align: center;">A reliable emergency power
+                                management solution designed to ensure uninterrupted electricity for critical healthcare
+                                services.</div>
                         </div>
                     </article>
                     <!-- Project 9 -->
-                    <article class="glass-card hover-glow project-detail-card" style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
-                            <img src="assets/olive_logo.png" alt="Olive Logo" style="height: 56px; object-fit: contain;">
-                            <h3 style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">Olive Apartments CT Meter Panel Project</h3>
+                    <article class="glass-card hover-glow project-detail-card"
+                        style="align-items: center; text-align: center; padding-bottom: var(--space-4);">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: var(--space-4); flex-wrap: wrap;">
+                            <img src="assets/olive_logo.png" alt="Olive Logo"
+                                style="height: 56px; object-fit: contain;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.5vw, 2.2rem); font-weight: 800; letter-spacing: 1px; color: var(--clr-primary); text-transform: uppercase; margin-bottom: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">
+                                Olive Apartments CT Meter Panel Project</h3>
                         </div>
 
-                        <div style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
-                            <img src="assets/olive_flat.png" alt="Olive Apartments CT Meter Panel Image" style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
+                        <div
+                            style="width: 100%; max-width: 800px; background-color: #f8f9fa; border-radius: var(--br-md); padding: var(--space-3); margin-bottom: var(--space-4); display: flex; justify-content: center;">
+                            <img src="assets/olive_flat.png" alt="Olive Apartments CT Meter Panel Image"
+                                style="width: 100%; max-height: 500px; object-fit: contain; mix-blend-mode: darken; filter: contrast(1.05);">
                         </div>
 
                         <button class="btn-secondary toggle-details-btn">Show Details</button>
 
-                        <div class="project-details-container" style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
+                        <div class="project-details-container"
+                            style="display: none; text-align: left; width: 100%; margin-top: var(--space-4);">
                             <div class="tags-container" style="text-align: center;">
                                 <span class="project-tag">OLIVE APARTMENTS</span>
                                 <span class="project-tag">CT METER PANEL</span>
@@ -471,13 +581,20 @@
                             </div>
                             <ul>
                                 <li><strong>Project Type:</strong> Residential CT Metering Switch Board</li>
-                                <li><strong>Main Incomer:</strong> Specialized TPN MCCB with integrated ELR protection</li>
-                                <li><strong>Metering:</strong> Dedicated CT Metering compartments with professional digital energy meters</li>
-                                <li><strong>Protection:</strong> Integrated Earth Leakage protection for advanced consumer safety</li>
-                                <li><strong>Construction:</strong> Multi-compartment modular enclosure for easy maintenance access</li>
-                                <li><strong>Busbars:</strong> High-grade Electrolytic Aluminum busbars with industrial-standard grading</li>
+                                <li><strong>Main Incomer:</strong> Specialized TPN MCCB with integrated ELR protection
+                                </li>
+                                <li><strong>Metering:</strong> Dedicated CT Metering compartments with professional
+                                    digital energy meters</li>
+                                <li><strong>Protection:</strong> Integrated Earth Leakage protection for advanced
+                                    consumer safety</li>
+                                <li><strong>Construction:</strong> Multi-compartment modular enclosure for easy
+                                    maintenance access</li>
+                                <li><strong>Busbars:</strong> High-grade Electrolytic Aluminum busbars with
+                                    industrial-standard grading</li>
                             </ul>
-                            <div class="project-summary" style="text-align: center;">A specialized power measurement and safety solution designed for reliable operation in large-scale residential complexes.</div>
+                            <div class="project-summary" style="text-align: center;">A specialized power measurement and
+                                safety solution designed for reliable operation in large-scale residential complexes.
+                            </div>
                         </div>
                     </article>
 
