@@ -53,6 +53,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: var(--space-4);
             margin-top: var(--space-6);
+            align-items: start;
         }
 
         @media screen and (max-width: 1100px) {
@@ -118,6 +119,165 @@
             border-top: 1px solid var(--clr-border);
             padding-top: var(--space-2);
             margin-top: auto;
+        }
+
+        
+        /* Project Details Modal */
+        .project-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 20, 35, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 2500;
+            justify-content: center;
+            align-items: center;
+            padding: var(--space-3);
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .project-modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .project-modal-dialog {
+            background: #FFFFFF;
+            border-radius: var(--br-lg);
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid rgba(0, 114, 188, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            animation: modalSlideUp 0.3s ease;
+        }
+
+        @keyframes modalSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .project-modal-dialog {
+                animation: none;
+            }
+            .project-modal-overlay {
+                transition: none;
+            }
+        }
+
+        .project-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-3) var(--space-4);
+            border-bottom: 1px solid var(--clr-border);
+            background: #FFFFFF;
+            flex-shrink: 0;
+        }
+
+        .project-modal-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            flex-wrap: wrap;
+        }
+
+        .project-modal-logo {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .project-modal-title-wrap h3 {
+            margin: 0;
+            color: var(--clr-primary);
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+
+        .project-modal-close {
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            line-height: 1;
+            color: #666;
+            cursor: pointer;
+            padding: 0 8px;
+            transition: color 0.2s;
+        }
+
+        .project-modal-close:hover {
+            color: var(--clr-primary);
+        }
+
+        .project-modal-body {
+            padding: var(--space-4);
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        .project-modal-image-wrap {
+            width: 100%;
+            max-height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            border-radius: var(--br-md);
+            margin-bottom: var(--space-4);
+            padding: var(--space-2);
+        }
+
+        .project-modal-image-wrap img {
+            max-width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+        }
+
+        .project-modal-specs ul {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-3) 0;
+        }
+
+        .project-modal-specs li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            font-size: 0.95rem;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        .project-modal-specs li strong {
+            color: #08213e;
+            font-weight: 600;
+        }
+
+        .project-modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-4);
+            border-top: 1px solid var(--clr-border);
+            background: #FFFFFF;
+            flex-shrink: 0;
         }
 
         /* Lightbox Styles */
@@ -694,11 +854,11 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index#about">About</a></li>
-                    <li><a href="index#products">Products</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="/#products">Products</a></li>
                     <li><a href="gallery">Gallery</a></li>
                     <li><a href="careers">Careers</a></li>
-                    <li><a href="index#contact">Contact</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
             </div>
                         <div class="footer-seo">
@@ -717,6 +877,32 @@
         </div>
     </footer>
 
+    
+    <!-- Project Details Modal -->
+    <div class="project-modal-overlay" id="projectDetailsModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="project-modal-dialog">
+            <div class="project-modal-header">
+                <div class="project-modal-title-wrap">
+                    <img id="modalProjectLogo" src="" alt="Client Logo" class="project-modal-logo">
+                    <h3 id="modalProjectTitle">Project Details</h3>
+                </div>
+                <button type="button" class="project-modal-close" id="closeDetailsModal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-modal-image-wrap">
+                    <img id="modalProjectImage" src="" alt="Project Image">
+                </div>
+                <div id="modalProjectContent" class="project-modal-specs">
+                    <!-- Dynamic project specs inserted here -->
+                </div>
+            </div>
+            <div class="project-modal-footer">
+                <a href="contact" class="btn-primary glow-btn" style="padding: 10px 24px; font-size: 0.95rem;">Get a Quote</a>
+                <button type="button" class="btn-secondary" id="cancelDetailsModal" style="padding: 10px 20px; font-size: 0.95rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Lightbox Overlay -->
     <div class="lightbox-overlay" id="lightboxOverlay">
         <span class="lightbox-close">&times;</span>
@@ -726,25 +912,72 @@
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Toggle Details Logic
+            // Project Details Modal Logic
+            const modal = document.getElementById('projectDetailsModal');
+            const modalTitle = document.getElementById('modalProjectTitle');
+            const modalLogo = document.getElementById('modalProjectLogo');
+            const modalImage = document.getElementById('modalProjectImage');
+            const modalContent = document.getElementById('modalProjectContent');
+            const closeModalBtn = document.getElementById('closeDetailsModal');
+            const cancelModalBtn = document.getElementById('cancelDetailsModal');
             const toggleButtons = document.querySelectorAll('.toggle-details-btn');
 
-            toggleButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const card = this.closest('.project-detail-card');
-                    const detailsContainer = card ? card.querySelector('.project-details-container') : null;
-                    if (!detailsContainer) return;
-                    
-                    const isHidden = detailsContainer.style.display === 'none' || window.getComputedStyle(detailsContainer).display === 'none';
+            function openProjectModal(card) {
+                const titleEl = card.querySelector('h3');
+                const logoEl = card.querySelector('img[alt*="Logo"]');
+                const projectImgEl = card.querySelector('.project-detail-card > div:nth-of-type(2) img') || card.querySelector('img[alt*="Project"]');
+                const detailsContainer = card.querySelector('.project-details-container');
 
-                    if (isHidden) {
-                        detailsContainer.style.display = 'block';
-                        this.textContent = 'Hide Details';
-                    } else {
-                        detailsContainer.style.display = 'none';
-                        this.textContent = 'Show Details';
-                    }
+                if (titleEl) modalTitle.textContent = titleEl.textContent.trim();
+                if (logoEl) {
+                    modalLogo.src = logoEl.src;
+                    modalLogo.alt = logoEl.alt;
+                    modalLogo.style.display = 'block';
+                } else {
+                    modalLogo.style.display = 'none';
+                }
+                if (projectImgEl) {
+                    modalImage.src = projectImgEl.src;
+                    modalImage.alt = projectImgEl.alt;
+                }
+
+                if (detailsContainer) {
+                    const tags = detailsContainer.querySelector('.tags-container');
+                    const ul = detailsContainer.querySelector('ul');
+                    const summary = detailsContainer.querySelector('.project-summary');
+
+                    modalContent.innerHTML = '';
+                    if (tags) modalContent.appendChild(tags.cloneNode(true));
+                    if (ul) modalContent.appendChild(ul.cloneNode(true));
+                    if (summary) modalContent.appendChild(summary.cloneNode(true));
+                }
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeProjectModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const card = this.closest('.project-detail-card');
+                    if (card) openProjectModal(card);
                 });
+            });
+
+            closeModalBtn.addEventListener('click', closeProjectModal);
+            cancelModalBtn.addEventListener('click', closeProjectModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeProjectModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeProjectModal();
+                }
             });
 
             // Lightbox Logic
