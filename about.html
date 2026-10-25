@@ -122,12 +122,30 @@
             display: flex;
             align-items: center;
             gap: var(--space-2);
-            font-size: 1.1rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #08213e;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95);
+            padding: 10px 16px;
+            background: rgba(255, 255, 255, 0.72);
+            border-radius: var(--br-md);
+            border: 1px solid rgba(0, 114, 188, 0.16);
+            backdrop-filter: blur(4px);
+            transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .portfolio-item:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: translateX(4px);
+            box-shadow: 0 4px 14px rgba(0, 114, 188, 0.14);
         }
 
         .portfolio-item span {
             color: var(--clr-primary);
+            font-size: 1.25rem;
             font-weight: bold;
+            display: inline-flex;
+            align-items: center;
         }
 
         .facility-image {
@@ -278,7 +296,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">FULL PRODUCT <span class="text-gradient">PORTFOLIO</span></h2>
-                    <p class="section-desc">Comprehensive range of specialized electrical control panels.</p>
+                    <p class="section-desc" style="color: #08213e; font-weight: 500; font-size: 1.15rem; text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95);">Comprehensive range of specialized electrical control panels.</p>
                     <div class="cyber-line"></div>
                 </div>
                 <div class="portfolio-list-grid">
