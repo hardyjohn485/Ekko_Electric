@@ -292,7 +292,7 @@ img {
     position: relative;
     padding-top: var(--space-12);
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -416,7 +416,7 @@ section {
    PRODUCTS SECTION
    ========================================= */
 .products-section {
-    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -497,7 +497,7 @@ section {
    ========================================= */
 .projects-section {
     position: relative;
-    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -554,7 +554,7 @@ section {
    TESTIMONIALS SECTION
    ========================================= */
 .testimonial-section {
-    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -864,7 +864,7 @@ section {
    ========================================= */
 .location-section {
     padding: var(--space-12) 0;
-    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
