@@ -345,9 +345,11 @@ section {
 }
 
 .section-desc {
-    color: var(--clr-text-muted);
-    font-size: 1.2rem;
+    color: #08213e;
+    font-size: 1.15rem;
+    font-weight: 500;
     margin-bottom: var(--space-3);
+    line-height: 1.6;
 }
 
 /* =========================================
@@ -915,6 +917,7 @@ section {
 .careers-intro,
 .contact-hero p,
 .projects-hero p,
+.projects-page-hero p,
 .gallery-hero p {
     color: #08213e !important;
     font-weight: 500 !important;
