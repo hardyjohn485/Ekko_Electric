@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | ekko electric</title>
+    <meta name="description"
+        content="Join the ekko electric team. We are looking for passionate electrical engineers and technical professionals to help shape the future of LT panel board manufacturing in Kerala.">
+    <meta name="keywords"
+        content="ekko electric careers, electrical engineer jobs kerala, panel board manufacturing jobs, ekko electric hiring">
+    <link rel="canonical" href="https://www.ekkoelectric.in/careers">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ekkoelectric.in/careers">
+    <meta property="og:title" content="Careers | ekko electric">
+    <meta property="og:description" content="Join the ekko electric team and help shape the future of electrical solutions in Kerala.">
+    <meta property="og:image" content="https://www.ekkoelectric.in/assets/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ekkoelectric.in/careers">
+    <meta property="twitter:title" content="Careers | ekko electric">
+    <meta property="twitter:description" content="Join the ekko electric team and help shape the future of electrical solutions in Kerala.">
+    <meta property="twitter:image" content="https://www.ekkoelectric.in/assets/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <style>
+        .careers-hero {
+            padding: var(--space-12) 0 var(--space-6);
+            background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .careers-section {
+            padding: var(--space-10) 0;
+        }
+
+        .careers-intro {
+            max-width: 680px;
+            margin: 0 auto var(--space-10);
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--clr-text-muted);
+        }
+
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-4);
+            margin-bottom: var(--space-10);
+        }
+
+        .perk-card {
+            text-align: center;
+            padding: var(--space-5);
+            transition: transform 0.3s ease;
+        }
+
+        .perk-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .perk-icon {
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: var(--space-2);
+            color: var(--clr-primary);
+        }
+
+        .perk-card h3 {
+            font-size: 1rem;
+            margin-bottom: var(--space-1);
+        }
+
+        .perk-card p {
+            font-size: 0.875rem;
+            color: var(--clr-text-muted);
+            margin: 0;
+        }
+
+        /* CTA card */
+        .cta-card {
+            background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('assets/product-bg-premium.png');
+            background-size: cover;
+            background-attachment: fixed;
+            border-top: 1px solid var(--clr-border);
+            border-bottom: 1px solid var(--clr-border);
+            padding: var(--space-10) 0;
+        }
+
+        .cta-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta-inner .section-title {
+            margin-bottom: var(--space-3);
+        }
+
+        .cta-inner .caption {
+            font-size: 1.05rem;
+            color: var(--clr-text-muted);
+            line-height: 1.7;
+            margin-bottom: var(--space-6);
+        }
+
+        .email-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--clr-primary);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: var(--space-3) var(--space-6);
+            border-radius: 50px;
+            text-decoration: none;
+            transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            letter-spacing: 0.01em;
+        }
+
+        .email-badge:hover {
+            opacity: 0.88;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+        }
+
+        .email-badge svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .note-text {
+            margin-top: var(--space-4);
+            font-size: 0.875rem;
+            color: var(--clr-text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .careers-hero {
+                padding-top: var(--space-12);
+            }
+
+            .perks-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .perks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .email-badge {
+                font-size: 0.95rem;
+                padding: var(--space-3) var(--space-4);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .perk-card,
+            .email-badge {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="glass-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="assets/logo.jpg" style="height: 80px; width: auto;" alt="Ekko Electric Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="/#products">Our Products</a></li>
+                    <li><a href="/#services">Our Services</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="assets/ekko_portfolio.pdf" target="_blank">Portfolio</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="careers" class="active">Careers</a></li>
+                    <li><a href="/#contact" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="careers-hero">
+            <div class="container">
+                <h1 class="section-title">JOIN THE <span class="text-gradient">TEAM</span></h1>
+                <p class="section-desc">Build the future of electrical solutions with us.</p>
+                <div class="cyber-line center-line"></div>
+            </div>
+        </section>
+
+        <!-- Intro + Perks -->
+        <section class="careers-section">
+            <div class="container">
+                <p class="careers-intro">
+                    At <strong>ekko electric</strong>, we believe great people build great products. We are always
+                    looking for driven, skilled, and curious individuals who want to make a real impact in the
+                    electrical manufacturing industry. Whether you are an experienced engineer or just starting out,
+                    there is a place for you here.
+                </p>
+
+                <div class="section-header text-center" style="margin-bottom: var(--space-6);">
+                    <h2 class="section-title">Why Work <span class="text-gradient">With Us</span></h2>
+                    <div class="cyber-line center-line"></div>
+                </div>
+
+                <div class="perks-grid">
+                    <div class="perk-card glass-card">
+                        <span class="perk-icon">⚡</span>
+                        <h3>Cutting-Edge Projects</h3>
+                        <p>Work on high-impact LT panel solutions across diverse industries.</p>
+                    </div>
+                    <div class="perk-card glass-card">
+                        <span class="perk-icon">📈</span>
+                        <h3>Career Growth</h3>
+                        <p>Continuous learning opportunities and a clear path to advance.</p>
+                    </div>
+                    <div class="perk-card glass-card">
+                        <span class="perk-icon">🤝</span>
+                        <h3>Collaborative Culture</h3>
+                        <p>A team that values transparency, respect, and shared success.</p>
+                    </div>
+                    <div class="perk-card glass-card">
+                        <span class="perk-icon">🛡️</span>
+                        <h3>Safety First</h3>
+                        <p>Industry-leading safety standards in every workspace we maintain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email CTA -->
+        <section class="cta-card">
+            <div class="container">
+                <div class="cta-inner">
+                    <h2 class="section-title">READY TO <span class="text-gradient">APPLY?</span></h2>
+                    <div class="cyber-line center-line"></div>
+                    <p class="caption">
+                        We do not list positions — we welcome talent. Send us your CV and a short note about yourself
+                        and we will reach out when the right opportunity opens up.
+                    </p>
+                    <a href="mailto:careers@ekkoelectric.in" class="email-badge" id="careers-email-link"
+                        aria-label="Send your application email to careers at ekko electric">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <polyline points="2,4 12,13 22,4"/>
+                        </svg>
+                        careers@ekkoelectric.in
+                    </a>
+                    <p class="note-text">We aim to respond to every application within 5 business days.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container footer-content">
+            <div class="footer-brand" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <a href="/" style="display: block;">
+                    <img src="assets/logo.jpg" style="height: 160px; width: auto; margin-bottom: 16px; display: block;"
+                        alt="Ekko Electric Logo">
+                </a>
+                <p>CONTROL PANELS | MEASUREMENTS | PROTECTION</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="/#products">Products</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="careers" class="active">Careers</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-seo">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="#">Panel Board Manufacturing</a></li>
+                    <li><a href="#">Electrical Control Panels</a></li>
+                    <li><a href="#">Electrical Panel Board</a></li>
+                    <li><a href="#">3 Phase Electrical Panel Board</a></li>
+                    <li><a href="#">Control Panel Electrical Panel Board</a></li>
+                    <li><a href="#">Electrical Panel Board For Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© All rights reserved. ekko electric</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
