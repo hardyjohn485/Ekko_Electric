@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ekko electric</title>
+    <meta name="description"
+        content="Explore the engineering portfolio of ekko electric — the best electrical control panel board manufactures in kerala. Download our comprehensive technical portfolio PDF.">
+    <meta name="keywords"
+        content="best electrical control panel board manufactures in kerala, top electrical panel board manufacturing company in kerala, LT electrical panel board manufacturing in kerala, electrical panel board companys in kottayam, electrical control panel portfolio kerala">
+    <link rel="canonical" href="https://www.ekkoelectric.in/portfolio">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ekkoelectric.in/portfolio">
+    <meta property="og:title" content="Portfolio | ekko electric">
+    <meta property="og:description"
+        content="Download the official technical portfolio of ekko electric, leading electrical control panel board manufacturers in Kerala.">
+    <meta property="og:image" content="https://www.ekkoelectric.in/assets/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ekkoelectric.in/portfolio">
+    <meta property="twitter:title" content="Portfolio | ekko electric">
+    <meta property="twitter:description"
+        content="Download the official technical portfolio of ekko electric, leading electrical control panel board manufacturers in Kerala.">
+    <meta property="twitter:image" content="https://www.ekkoelectric.in/assets/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <style>
+        .portfolio-hero {
+            padding: var(--space-12) 0 var(--space-6);
+            background: linear-gradient(135deg, rgba(240, 248, 255, 0.20) 0%, rgba(215, 238, 255, 0.12) 50%, rgba(240, 248, 255, 0.20) 100%), url('assets/product-bg-premium.png');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .portfolio-section {
+            padding: var(--space-8) 0 var(--space-12);
+        }
+
+        .download-banner {
+            background: linear-gradient(135deg, rgba(0, 114, 188, 0.08) 0%, rgba(0, 174, 239, 0.08) 100%);
+            border: 1px solid rgba(0, 114, 188, 0.25);
+            border-radius: var(--br-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .download-banner-info {
+            max-width: 650px;
+        }
+
+        .download-banner-info h2 {
+            color: var(--clr-primary);
+            font-size: 1.6rem;
+            margin-bottom: var(--space-2);
+        }
+
+        .download-banner-info p {
+            color: #08213e;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: var(--space-2);
+        }
+
+        .file-meta {
+            font-size: 0.85rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-4);
+            margin-bottom: var(--space-8);
+        }
+
+        .portfolio-card {
+            padding: var(--space-5);
+            display: flex;
+            flex-direction: column;
+            border-top: 3px solid var(--clr-primary);
+        }
+
+        .portfolio-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(0, 114, 188, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-3);
+            border: 1px solid rgba(0, 114, 188, 0.2);
+        }
+
+        .portfolio-card-icon svg {
+            width: 26px;
+            height: 26px;
+            stroke: var(--clr-primary);
+        }
+
+        .portfolio-card h3 {
+            color: var(--clr-primary);
+            font-size: 1.25rem;
+            margin-bottom: var(--space-2);
+        }
+
+        .portfolio-card p {
+            color: #222;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: var(--space-3);
+        }
+
+        .portfolio-card-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid var(--clr-border);
+            padding-top: var(--space-2);
+        }
+
+        .portfolio-card-features li {
+            font-size: 0.88rem;
+            color: #444;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .portfolio-card-features li::before {
+            content: "✓";
+            color: var(--clr-primary);
+            font-weight: bold;
+        }
+
+        .standards-box {
+            padding: var(--space-6);
+            border-radius: var(--br-lg);
+            margin-bottom: var(--space-8);
+            background: #FFFFFF;
+        }
+
+        .standards-box h2 {
+            color: var(--clr-primary);
+            text-align: center;
+            margin-bottom: var(--space-4);
+        }
+
+        .standards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--space-4);
+            text-align: center;
+        }
+
+        .standard-item h4 {
+            color: #08213e;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .standard-item p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .cta-box {
+            text-align: center;
+            padding: var(--space-8) var(--space-4);
+            border-radius: var(--br-lg);
+            background: linear-gradient(135deg, rgba(0, 114, 188, 0.05) 0%, rgba(0, 174, 239, 0.05) 100%);
+            border: 1px solid rgba(0, 114, 188, 0.2);
+        }
+
+        .cta-box h2 {
+            color: var(--clr-primary);
+            font-size: 1.8rem;
+            margin-bottom: var(--space-2);
+        }
+
+        .cta-box p {
+            color: #08213e;
+            font-weight: 500;
+            max-width: 640px;
+            margin: 0 auto var(--space-4);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .download-banner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="glass-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="assets/logo.jpg" style="height: 80px; width: auto;" alt="Ekko Electric Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="/#products">Our Products</a></li>
+                    <li><a href="/#services">Our Services</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="portfolio" class="active">Portfolio</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="careers">Careers</a></li>
+                    <li><a href="contact" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="container text-center">
+                <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 8px;">Our <span class="text-gradient">Portfolio</span></h1>
+                <p style="color: #08213e; font-weight: 500; font-size: 1.15rem; max-width: 720px; margin: 0 auto; line-height: 1.6;">
+                    Recognized as one of the best electrical control panel board manufactures in kerala, ekko electric delivers precision-engineered switchboards, motor control centers, and power distribution solutions tailored for high-demand industrial and commercial infrastructure.
+                </p>
+                <div class="cyber-line center-line" style="margin: 16px auto 24px;"></div>
+                <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <a href="assets/ekko_portfolio.pdf" download="ekko_portfolio.pdf" class="btn-primary glow-btn" target="_blank" style="padding: 12px 28px; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download Full Portfolio (PDF)
+                    </a>
+                    <a href="contact" class="btn-secondary" style="padding: 12px 24px; font-size: 1rem;">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Content Section -->
+        <section class="portfolio-section">
+            <div class="container">
+
+                <!-- Download Card Banner -->
+                <div class="download-banner glass-card hover-glow">
+                    <div class="download-banner-info">
+                        <h2>Official Engineering Portfolio Catalog</h2>
+                        <p>
+                            Download our complete engineering catalog featuring detailed single-line diagrams (SLDs), technical component ratings, busbar conductivity calculations, and photos of completed panel installations across Kerala.
+                        </p>
+                        <div class="file-meta">
+                            <span>📄 PDF Document</span>
+                            <span>•</span>
+                            <span>📦 7.1 MB File Size</span>
+                            <span>•</span>
+                            <span>🔒 High-Resolution Documentation</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/ekko_portfolio.pdf" download="ekko_portfolio.pdf" class="btn-primary glow-btn" target="_blank" style="padding: 14px 30px; font-size: 1.05rem; display: inline-flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            Download Portfolio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Manufacturing Domains -->
+                <div class="section-header text-center" style="margin-bottom: var(--space-6);">
+                    <h2 class="section-title">Core <span class="text-gradient">Manufacturing Domains</span></h2>
+                    <p style="color: #08213e; font-weight: 500;">Comprehensive LT panel board manufacturing expertise serving Kottayam and all districts of Kerala.</p>
+                    <div class="cyber-line center-line"></div>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Domain 1 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 12h10M12 7v10"/></svg>
+                        </div>
+                        <h3>Main Switch Boards (MSB) & PCC</h3>
+                        <p>High-capacity Power Control Centers engineered for major petroleum corporations (HPCL, IOCL, Nayara) and industrial facilities, featuring heavy-duty switchgear and multi-tiered fault protection.</p>
+                        <ul class="portfolio-card-features">
+                            <li>Current ratings up to 4000A</li>
+                            <li>High-conductivity copper &amp; aluminum busbars</li>
+                            <li>Form 3b / Form 4b modular compartmentalization</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 2 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <h3>Motor Control Centers (MCC) & Automation</h3>
+                        <p>Specialized motor management panels with DOL, Star-Delta, soft starters, and Variable Frequency Drives (VFD) ensuring smooth motor starting and optimal energy consumption.</p>
+                        <ul class="portfolio-card-features">
+                            <li>VFD &amp; Soft-starter integration</li>
+                            <li>PLC automated sequence controllers</li>
+                            <li>Thermal overload &amp; phase-reversal protection</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 3 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3>Automatic Mains Failure (AMF) Panels</h3>
+                        <p>Mission-critical automatic power changeover systems for hospitals, datacenters, and commercial towers, switching seamlessly between utility power and backup generators without manual intervention.</p>
+                        <ul class="portfolio-card-features">
+                            <li>Automatic Transfer Switch (ATS) mechanisms</li>
+                            <li>Engine monitoring &amp; battery charge control</li>
+                            <li>Fail-safe interlocks and emergency stop logic</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 4 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                        </div>
+                        <h3>CT Meter Cubicles & Commercial Distribution</h3>
+                        <p>Utility-approved Current Transformer (CT) metering cubicles and multi-tenant power distribution networks built for high-density residential towers and shopping complexes.</p>
+                        <ul class="portfolio-card-features">
+                            <li>Tamper-proof metering compartments</li>
+                            <li>Accurate energy measurement modules</li>
+                            <li>Independent tenant circuit isolation</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 5 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3>Home Electrical Panel Boards</h3>
+                        <p>High-grade domestic distribution boards offering full home protection, RCBO residual current sensing, lightning surge protection, and clean modular designs matching modern interiors.</p>
+                        <ul class="portfolio-card-features">
+                            <li>3-Phase &amp; Single-Phase configurations</li>
+                            <li>Class-tested miniature circuit breakers (MCBs)</li>
+                            <li>Shock-proof, fire-retardant enclosures</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 6 -->
+                    <article class="glass-card hover-glow portfolio-card">
+                        <div class="portfolio-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>APFC & Power Quality Solutions</h3>
+                        <p>Automatic Power Factor Correction capacitor banks maintaining unity power factor, eliminating utility surcharges and optimizing energy distribution across industrial plants.</p>
+                        <ul class="portfolio-card-features">
+                            <li>Microprocessor-based power factor relays</li>
+                            <li>Heavy-duty detuned harmonic filter reactors</li>
+                            <li>Low-loss, self-healing power capacitors</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Engineering Standards Box -->
+                <div class="standards-box glass-card">
+                    <h2>Our Manufacturing &amp; Testing Standards</h2>
+                    <div class="standards-grid">
+                        <div class="standard-item">
+                            <h4>Enclosure Quality</h4>
+                            <p>CRCA sheet steel fabrication with 7-tank chemical pre-treatment and 80+ micron pure polyester powder coating.</p>
+                        </div>
+                        <div class="standard-item">
+                            <h4>Busbar Engineering</h4>
+                            <p>Electrolytic copper and EC-grade aluminum busbars with heat-shrinkable insulation sleeves and color coding.</p>
+                        </div>
+                        <div class="standard-item">
+                            <h4>Quality Testing</h4>
+                            <p>100% routine testing including high-voltage insulation checks, megger testing, and functional circuit simulation.</p>
+                        </div>
+                        <div class="standard-item">
+                            <h4>Premium Switchgear</h4>
+                            <p>Integrated with authentic components from industry leaders: L&T, Schneider Electric, Siemens, and ABB.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Box -->
+                <div class="cta-box glass-card hover-glow">
+                    <h2>Need a Custom Control Panel Designed?</h2>
+                    <p>
+                        Connect with our engineering team in Kottayam to discuss project requirements, single-line diagrams, or request a customized quotation for your installation.
+                    </p>
+                    <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                        <a href="contact" class="btn-primary glow-btn" style="padding: 12px 28px; font-size: 1rem;">Get a Quote</a>
+                        <a href="assets/ekko_portfolio.pdf" download="ekko_portfolio.pdf" class="btn-secondary" target="_blank" style="padding: 12px 24px; font-size: 1rem;">Download Portfolio PDF</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container footer-content">
+            <div class="footer-brand" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <a href="/" style="display: block;">
+                    <img src="assets/logo.jpg" style="height: 160px; width: auto; margin-bottom: 16px; display: block;"
+                        alt="Ekko Electric Logo">
+                </a>
+                <p>CONTROL PANELS | MEASUREMENTS | PROTECTION</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="/#products">Products</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="portfolio" class="active">Portfolio</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="careers">Careers</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-seo">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="/#products">LT Electrical Panel Board Manufacturing</a></li>
+                    <li><a href="/#products">Home Electrical Panel Board Manufacturing</a></li>
+                    <li><a href="/#products">3 Phase Electrical Board Manufacturing</a></li>
+                    <li><a href="/#products">Control Panel Board Manufacturing</a></li>
+                    <li><a href="/#products">All types of Electical Control Panel Manufacturing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© All rights reserved. ekko electric</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
