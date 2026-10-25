@@ -292,7 +292,7 @@ img {
     position: relative;
     padding-top: var(--space-12);
     overflow: hidden;
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -416,7 +416,7 @@ section {
    PRODUCTS SECTION
    ========================================= */
 .products-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -497,7 +497,7 @@ section {
    ========================================= */
 .projects-section {
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -554,7 +554,7 @@ section {
    TESTIMONIALS SECTION
    ========================================= */
 .testimonial-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -864,7 +864,7 @@ section {
    ========================================= */
 .location-section {
     padding: var(--space-12) 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('assets/product-bg-premium.png');
+    background: linear-gradient(135deg, rgba(230, 244, 255, 0.88) 0%, rgba(210, 236, 255, 0.82) 50%, rgba(235, 247, 255, 0.92) 100%), url('assets/product-bg-premium.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -882,3 +882,47 @@ section {
     }
 }
 
+
+
+/* =========================================================
+   ENHANCED TEXT VISIBILITY ON BACKGROUND IMAGE SECTIONS
+   ========================================================= */
+.hero-subtitle {
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    color: #08213e !important;
+    max-width: 760px;
+    margin: 0 auto var(--space-5);
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* Increase visibility for all sentences in front of background image sections */
+.hero-section p,
+.products-section .section-header p,
+.projects-section .section-header p,
+.testimonial-section .section-header p,
+.location-section .section-header p,
+.about-hero p,
+.about-cta-section p,
+.careers-hero p,
+.careers-intro,
+.contact-hero p,
+.projects-hero p,
+.gallery-hero p {
+    color: #08213e !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+/* Additional sentence clarity in cards across background sections */
+.timeline-content p {
+    color: #1a2a3a;
+    font-weight: 450;
+    line-height: 1.6;
+}
+
+.testimonial-text {
+    color: #112233 !important;
+    font-weight: 500;
+}
