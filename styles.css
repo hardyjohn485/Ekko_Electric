@@ -693,6 +693,12 @@ section {
     color: var(--clr-text);
 }
 
+
+.footer-brand img {
+    mix-blend-mode: multiply;
+    display: block;
+}
+
 .footer-brand p {
     color: var(--clr-text-muted);
     font-size: 0.9rem;
